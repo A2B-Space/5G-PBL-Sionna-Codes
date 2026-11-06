@@ -1,0 +1,2 @@
+frequency_hz,tx_x,tx_y,tx_z,rx_x,rx_y,rx_z,max_depth,allocated_path_slots,valid_num_paths,total_path_coefficient_power,strongest_path_coefficient_power,strongest_path_delay_seconds
+28000000000.0,-33.0,11.0,32.0,27.0,-13.0,1.5,5,20,20,1.6677088876537738e-10,1.42168485317562e-10,2.3835832507757004e-07

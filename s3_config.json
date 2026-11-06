@@ -1,0 +1,39 @@
+{
+    "experiment": "S3_8x8_UPA_Beam_Selection",
+    "carrier_frequency_hz": 28000000000.0,
+    "wavelength_m": 0.0107068735,
+    "transmitter_position_m": [
+        -33.0,
+        11.0,
+        32.0
+    ],
+    "transmitter_orientation_rad": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "transmitter_array": {
+        "rows": 8,
+        "columns": 8,
+        "elements": 64,
+        "pattern": "tr38901",
+        "polarization": "V",
+        "vertical_spacing_lambda": 0.5,
+        "horizontal_spacing_lambda": 0.5
+    },
+    "receiver_array": {
+        "rows": 1,
+        "columns": 1,
+        "pattern": "iso",
+        "polarization": "V"
+    },
+    "num_candidate_beams": 52,
+    "max_depth": 5,
+    "seed": 41,
+    "synthetic_array": true,
+    "cfr_baseband_frequency_offset_hz": 0.0,
+    "beam_metric": "abs(h_transpose_times_w)^2",
+    "precoding_weights_unit_norm": true,
+    "channel_normalization": false,
+    "delay_normalization": false
+}

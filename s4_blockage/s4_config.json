@@ -1,0 +1,112 @@
+{
+    "experiment": "S4_Controlled_Environmental_Blockage",
+    "sionna_rt_api_target": "2.2.0",
+    "carrier_frequency_hz": 28000000000.0,
+    "wavelength_m": 0.0107068735,
+    "transmitter_position_m": [
+        -33.0,
+        11.0,
+        32.0
+    ],
+    "transmitter_orientation_rad": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "transmitter_array": {
+        "rows": 8,
+        "columns": 8,
+        "elements": 64,
+        "pattern": "tr38901",
+        "polarization": "V",
+        "vertical_spacing_lambda": 0.5,
+        "horizontal_spacing_lambda": 0.5
+    },
+    "receiver_array": {
+        "rows": 1,
+        "columns": 1,
+        "pattern": "iso",
+        "polarization": "V"
+    },
+    "beam_codebook": {
+        "num_candidate_beams": 52,
+        "construction": "S3-compatible forward-hemisphere DFT-style grid",
+        "precoding_weights_unit_norm": true,
+        "beam_metric": "abs(h_transpose_times_w)^2"
+    },
+    "solver": {
+        "deterministic": true,
+        "max_depth": 5,
+        "los": true,
+        "specular_reflection": true,
+        "diffuse_reflection": false,
+        "refraction": true,
+        "synthetic_array": true,
+        "seed": 41
+    },
+    "channel": {
+        "cfr_baseband_frequency_offsets_hz": [
+            0.0
+        ],
+        "channel_normalization": false,
+        "delay_normalization": false,
+        "exported_channel_shape": [
+            2,
+            11,
+            64
+        ],
+        "exported_channel_dtype": "complex128"
+    },
+    "obstruction": {
+        "name": "s4_concrete_obstruction",
+        "geometry": "axis-aligned closed cuboid",
+        "interpretation": "simplified ground-connected building-like obstruction",
+        "material_itu_type": "concrete",
+        "material_thickness_m": 0.3,
+        "center_m": [
+            -3.0,
+            -0.5,
+            11.0
+        ],
+        "size_xyz_m": [
+            1.0,
+            3.0,
+            22.0
+        ],
+        "bounds_min_m": [
+            -3.5,
+            -2.0,
+            0.0
+        ],
+        "bounds_max_m": [
+            -2.5,
+            1.0,
+            22.0
+        ]
+    },
+    "trajectory": {
+        "input_file": "/home/a2b/sionna_project/s2_mobility_summary.csv",
+        "num_snapshots": 11,
+        "snapshot_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "validation": {
+        "baseline_contains_both_los_and_nlos_snapshots": true,
+        "blocked_direct_los_absent_at_geometrically_intersected_snapshots": true,
+        "los_classification_unchanged_where_new_blocker_does_not_intersect": true,
+        "baseline_direct_los_delay_matches_geometric_delay_within_1ns": true
+    },
+    "validation_passed": true,
+    "metric_warning": "Beamformed channel gain is dimensionless; it is not calibrated received power in watts or dBm."
+}

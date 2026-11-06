@@ -1,0 +1,776 @@
+{
+  "package_name": "Sionna_RT_S1-S8_Reproducibility_Package",
+  "package_schema_version": "1.0.0",
+  "created_unix_time": 1793977290,
+  "source_project": "/home/a2b/sionna_project",
+  "stage_registry_status": "PASS",
+  "file_count_before_manifest": 153,
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 2182,
+      "sha256": "85afe175b6e532510c573a65d192870bfb13ff1e2a58152ca569ee21ffa1bace"
+    },
+    {
+      "path": "docs/METHODOLOGY_AND_ASSUMPTIONS.md",
+      "size_bytes": 2696,
+      "sha256": "f0d23b215210b4a5a1176863723ca089a5ce0c47e5894708bbd37be6bca2df09"
+    },
+    {
+      "path": "docs/REFERENCES.md",
+      "size_bytes": 748,
+      "sha256": "b68f76bda0cd98e550a11d27ff01a957582911fb7261f660f9097be12f4be7e9"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY_RUNBOOK.md",
+      "size_bytes": 2120,
+      "sha256": "3fc5383f3885b039800f3e6719995ecab91bd7f8c90b8b5b8b64237a0ee22442"
+    },
+    {
+      "path": "docs/SEMANTIC_INTEGRATION_CONTRACT.md",
+      "size_bytes": 1995,
+      "sha256": "e7018d2408b404adcdfbf1685fa7c7e3488bf7bdc45c6edc2b9068500c4917fb"
+    },
+    {
+      "path": "docs/SOURCE_GAPS.md",
+      "size_bytes": 712,
+      "sha256": "92b7a0d96b974ab6ae10a54bbc673f53e65337423cf5cbe646c21d680361f2aa"
+    },
+    {
+      "path": "environment/environment.json",
+      "size_bytes": 2137,
+      "sha256": "d13ca1859b3effdee159d5a09b8c676fab8df72d72f8c34373e6c2eb560fb004"
+    },
+    {
+      "path": "environment/requirements-freeze.txt",
+      "size_bytes": 773,
+      "sha256": "f52e20fb8ec53f903fabecbe1868a87ea1ee4d74b40afe85099f351b44b71fba"
+    },
+    {
+      "path": "manifests/stage_registry.json",
+      "size_bytes": 2700,
+      "sha256": "d5ddb87e863d71b35f1cabfd9388af97ff6a85ad829537540b6c41b89cfa1926"
+    },
+    {
+      "path": "results/S1/s1_ray_tracing_results.csv",
+      "size_bytes": 303,
+      "sha256": "8d9585f0a4b107d1e7c577389a3fb51e3fb01501217809434df2c45b4df46d88"
+    },
+    {
+      "path": "results/S2/s2_mobility_paths.csv",
+      "size_bytes": 20279,
+      "sha256": "6953a681c8a5dda926b52dae92ff58efb2b8f1a88979e46f7da8fafbf7d07735"
+    },
+    {
+      "path": "results/S2/s2_mobility_summary.csv",
+      "size_bytes": 2350,
+      "sha256": "9b8a1ab6fa0a55b36c9edcca327d8438f2edfc5c5f31dd0ec3874b183d594c20"
+    },
+    {
+      "path": "results/S3/s3_beam_codebook.csv",
+      "size_bytes": 128594,
+      "sha256": "bfaa4fd72c66cca9a5e88bcb4bdb456d572be6dfe95496bfa3c37d2c20727b18"
+    },
+    {
+      "path": "results/S3/s3_beam_selection_all_beams.csv",
+      "size_bytes": 45986,
+      "sha256": "664ce817ea4eeb7a75d7a004334df8dece202a93961ab396697d3e07b0dfabcb"
+    },
+    {
+      "path": "results/S3/s3_beam_selection_summary.csv",
+      "size_bytes": 3709,
+      "sha256": "24c05009833ad66b5854b5aba146552475078bfad9b3f035008450c82539be7a"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_beam_codebook.csv",
+      "size_bytes": 128594,
+      "sha256": "bfaa4fd72c66cca9a5e88bcb4bdb456d572be6dfe95496bfa3c37d2c20727b18"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_beam_metrics.csv",
+      "size_bytes": 102133,
+      "sha256": "893cfc6ead9c394b5e277399257549e0580d95fd17a57dc7d371bdcceefc49c3"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_blockage_comparison.csv",
+      "size_bytes": 6702,
+      "sha256": "8515d4dbf25a5f7a3f37ac772846de509e20b650881d76ba682cd576a6fa65b2"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_blocker.obj",
+      "size_bytes": 428,
+      "sha256": "73f492aed3677be86c97beac810c61d3ba3cb202fac3c235d5edefa9bf26f816"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_channel_data.npz",
+      "size_bytes": 44194,
+      "sha256": "eb1f16880260471174a08995f9638520c6aca727577bfca1c9a67ba7c9a25c9c"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_config.json",
+      "size_bytes": 3636,
+      "sha256": "14c74b9fc51d5975e6bef501ee22cd1ba53d44e9eaec5d1eb66d5f9d07aa8a08"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_path_coefficients.npz",
+      "size_bytes": 336569,
+      "sha256": "803597755d890ebb8ce4da83a3aa136d0cc648e1cdf02794898507cb7146b52b"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_path_details.csv",
+      "size_bytes": 154582,
+      "sha256": "65fcebbb229ebd3d902f42fc0b54f03a896b0cc51a55bd57d8b7541bd7cf3bbd"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_path_interactions.csv",
+      "size_bytes": 106359,
+      "sha256": "d3e8e6866fa10b162a61af87804dbad639978f09c18c93952f879ae7c308ca82"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_scene_objects.csv",
+      "size_bytes": 274,
+      "sha256": "710114c7b1c7acb334d645ac4f79feaa388785483d06832ecd4a9bc27fcf5e69"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_snapshot_summary.csv",
+      "size_bytes": 5221,
+      "sha256": "5050b7a7e01e7032579e4e6a21685ba9a9b6e235e70946979c8353983695b8e0"
+    },
+    {
+      "path": "results/S4/s4_blockage_geometry/s4_validation.txt",
+      "size_bytes": 902,
+      "sha256": "87ac6563990d3144614fc4d26fb97bca47f10f0f44f16713cb68b908240ed47b"
+    },
+    {
+      "path": "results/S5/s5_beam_tracking/s5_tracking_beam_switches.csv",
+      "size_bytes": 790,
+      "sha256": "5b441a68b9ca4f131e6ff5e80d6cf94247fcf3facd1cdcf42cb84a20908ea4ea"
+    },
+    {
+      "path": "results/S5/s5_beam_tracking/s5_tracking_config.json",
+      "size_bytes": 4204,
+      "sha256": "d7cda59b0d7519b0c55c3c4fe185d329d9f78c9cc8b8187b04f7c066979540c3"
+    },
+    {
+      "path": "results/S5/s5_beam_tracking/s5_tracking_per_snapshot.csv",
+      "size_bytes": 15584,
+      "sha256": "e85229e8f6f20cc0de9cf078fe0e8ddcaa633f7e7a491f12aab043d78dc5ef50"
+    },
+    {
+      "path": "results/S5/s5_beam_tracking/s5_tracking_summary.csv",
+      "size_bytes": 1257,
+      "sha256": "f975e2409aa7893d9e5557fa1dfae51951a37469c11bbe9f9a6daabac91f1e0b"
+    },
+    {
+      "path": "results/S5/s5_beam_tracking/s5_validation.txt",
+      "size_bytes": 1527,
+      "sha256": "3095e1627630c86ac13758cbcf67d40a956f0394348e5a53d3d1e3a35557be0a"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/01_regret_vs_position.pdf",
+      "size_bytes": 21014,
+      "sha256": "01947860d3fc86293e3f6104b50b457dcc1edffde3b0ecec223f689a79632b68"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/01_regret_vs_position.png",
+      "size_bytes": 190295,
+      "sha256": "03d6f9288410116033ff5f026a8729f29ecd24cb8bed62d7375bfa5ab95a0ac5"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/02_selected_beam_vs_position.pdf",
+      "size_bytes": 22498,
+      "sha256": "27d7899da16fc19798c86a80a70eb33c92ac2881107b99004cb6350384113e6c"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/02_selected_beam_vs_position.png",
+      "size_bytes": 156012,
+      "sha256": "35aae0280bf6789e57bf5e9c30b800d091d8b333ab47b643ffd7e783738e07f8"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/03_beam_probes_per_snapshot.pdf",
+      "size_bytes": 19713,
+      "sha256": "c3214aac191340f9d345bb654491ffddcf2a861cd6d5c62209b8ed15f5532298"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/03_beam_probes_per_snapshot.png",
+      "size_bytes": 136234,
+      "sha256": "3044429a15df0dad2b9750ccce7982405c1c72bd5c35da83aa294d264c2b09c6"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/04_cumulative_beam_probes.pdf",
+      "size_bytes": 22036,
+      "sha256": "44d591c034291348c90bbfd71a6d358e51b99d26ca07d5abc32f3a0e382de7d5"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/04_cumulative_beam_probes.png",
+      "size_bytes": 229634,
+      "sha256": "ebcdc442e9d04ac15db2d1c55e613b85beb56853875c47ab2f7e65ac41ac91ed"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/05_training_overhead_vs_regret.pdf",
+      "size_bytes": 19944,
+      "sha256": "e50d4f957440982582a4f5c503c83c74bdf8cbf9fd8e23ca8f2cfe5461faf39b"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/05_training_overhead_vs_regret.png",
+      "size_bytes": 129887,
+      "sha256": "c50b0841bef9a35b717d5d9d9ba26dc848016fc19e3b25331ecb6e26b905b992"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/06_adaptive_trigger_diagnostics.pdf",
+      "size_bytes": 21625,
+      "sha256": "c4f3392b6b52fac39c8f1e5964a5e8c534034d7ddddcb1ade072860fde7395e4"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/06_adaptive_trigger_diagnostics.png",
+      "size_bytes": 280104,
+      "sha256": "6b6b6b2e3c32f08a094628d0f6275669a32325c378493dee5160445cdd3725fe"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/07_regret_heatmap.pdf",
+      "size_bytes": 23254,
+      "sha256": "6398e2b34aafa1e9ee4d7a948fcdcad1f89b799a7b1211eee7aebbdd49b10fd9"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/07_regret_heatmap.png",
+      "size_bytes": 141231,
+      "sha256": "11ebec60b7c031c5fb2758222af36257055f4b46514099d405e25293053dbe3f"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/plots/s5_1_plot_report.pdf",
+      "size_bytes": 61117,
+      "sha256": "c355eeddc71fd9c6244c222d085f3583e1b71b383eb029ce76e8bbf84d815d4f"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/s5_1_beam_switches.csv",
+      "size_bytes": 1214,
+      "sha256": "51b34dd54045592fdc9a4fa36780a16bbe0ffda0b3731737b3696e5dae26cf59"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/s5_1_config.json",
+      "size_bytes": 3670,
+      "sha256": "297bc973758681ccd7f84352356bda0008309c9bab65cc2ab42cb3b274b8fc9e"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/s5_1_search_events.csv",
+      "size_bytes": 2632,
+      "sha256": "a53fd19160891cbc263fdae224afaf686fb66c882447cb2019360343d1ece459"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/s5_1_tracking_per_snapshot.csv",
+      "size_bytes": 24243,
+      "sha256": "d6dad7d4204c6de4c44b850660ee963604df0c7c57431189fa241e4f52d5e63b"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/s5_1_tracking_summary.csv",
+      "size_bytes": 1637,
+      "sha256": "9fc661028f49af82ce50377b31121c60d398af8b3cac4a1ba5354000ff28aae3"
+    },
+    {
+      "path": "results/S5_1/s5_1_adaptive_tracking/s5_1_validation.txt",
+      "size_bytes": 1300,
+      "sha256": "51ec70cdc5c2c50f9ea390ca38c63502a76e8bd6758ef5ea053dac996c87e0d0"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/README.md",
+      "size_bytes": 2854,
+      "sha256": "7116ca069e8c450c7ba256864c94722bd4a672f57e108508151b67fbbc1bb440"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/beam_codebook.csv",
+      "size_bytes": 128594,
+      "sha256": "bfaa4fd72c66cca9a5e88bcb4bdb456d572be6dfe95496bfa3c37d2c20727b18"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/beam_measurements.csv",
+      "size_bytes": 233726,
+      "sha256": "d3bb65f84d8c0568c6c6638a1882c648b054b9ede6be288c0bd4675a256c0f84"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/channel_data.npz",
+      "size_bytes": 45434,
+      "sha256": "05665b30a93b646e3490d64f0f65df248f4ed47a7148083235e51bca2734f0d7"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/data_dictionary.json",
+      "size_bytes": 2581,
+      "sha256": "9f812656c6d8e509452aadf85b7448ebc9e07d356d66a54d463a1734a32e682d"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/interaction_records.csv",
+      "size_bytes": 222862,
+      "sha256": "b880d17ebff4b559eda0f29ec4e5b1af3285ff946e6c323e2c90e3b2c3105e6c"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/manifest.json",
+      "size_bytes": 11912,
+      "sha256": "7ff20172da455586aadb76c07fc09a47e8d2977f37fa6d1b25de0ccbb2d742cb"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/path_records.csv",
+      "size_bytes": 185935,
+      "sha256": "9f6817185b827ad71a3fe56b1249928320182a4c2d3ed30b07605d4ce465fae1"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/01_path_count_vs_position.pdf",
+      "size_bytes": 18891,
+      "sha256": "a6213d267ecd28592c23b86c31e83ffddb62805fccfaae260e549d45a224177b"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/01_path_count_vs_position.png",
+      "size_bytes": 125680,
+      "sha256": "fa7465270fe722588de1da979735c2d1b5763ee7b3098a4553a45ac5dc0c3955"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/02_los_visibility_vs_position.pdf",
+      "size_bytes": 17837,
+      "sha256": "3ac6841911a03251d290ce6af8e81f402681c75016feeaba9fe63aa30aab268e"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/02_los_visibility_vs_position.png",
+      "size_bytes": 67793,
+      "sha256": "88973ca1b12e126a6fb4d8caab0985d04c6eb0cc2885d102dd24f5b035821d77"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/03_best_beam_gain_vs_position.pdf",
+      "size_bytes": 18961,
+      "sha256": "1ed78ef81f30f213b9381d38b89db46bdbaed58ec7766e4bbc153f6de9a7cac2"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/03_best_beam_gain_vs_position.png",
+      "size_bytes": 114964,
+      "sha256": "bd0365fd21a5b4099713de0997ce5ea34dfe1dcf4f2ac8986f4a247aa6b4b9e7"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/04_beam_gain_heatmap.pdf",
+      "size_bytes": 27383,
+      "sha256": "7897a0e77411562bf756697ee0095810b0c7925a516cb00c89fa0a5a3c0476ca"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/04_beam_gain_heatmap.png",
+      "size_bytes": 116778,
+      "sha256": "a0235994145f8ca609b43be73ef662e37f796204f36b313a088daefe9f1c7bdb"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/05_path_power_delay_scatter.pdf",
+      "size_bytes": 21455,
+      "sha256": "d14fcc44957db4e0ddb3bcbc3c8b7910c522058f6392cc02e8eddec904b50fa7"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/05_path_power_delay_scatter.png",
+      "size_bytes": 146709,
+      "sha256": "826333be11e7078d5a2d304cebca963afd1c2a0be85b425a7a70e9fd87ae551a"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/06_interaction_type_counts.pdf",
+      "size_bytes": 15820,
+      "sha256": "4135c2395a838f2c02616c00be9469422087f273f40f807c68afdbe588967894"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/06_interaction_type_counts.png",
+      "size_bytes": 67695,
+      "sha256": "8015613a2156fe35efff8ea83c6d1dcd5f58a9de01bc6f011561f95bd50fc665"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/07_tracking_regret_vs_position.pdf",
+      "size_bytes": 20835,
+      "sha256": "dc8442ba944272c5fb8923685502c874f2f6e2aa0c6fdd32f64c680cc58fbba1"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/07_tracking_regret_vs_position.png",
+      "size_bytes": 146967,
+      "sha256": "ed6f97d3ca1166ef525b40ae55dacf89a290b47942d477b639880e8545ca2d1f"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/plots/s6_dataset_qa_report.pdf",
+      "size_bytes": 53314,
+      "sha256": "489ff84f63296d227563737b15d270cf1b3ce344f4a12453b8142e4a03647537"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/scene_objects.csv",
+      "size_bytes": 625,
+      "sha256": "d8719c78d2ea80f20a7a3525716104f6a3ba499b5de733ff2271f11a3898a74c"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/snapshot_metadata.csv",
+      "size_bytes": 11478,
+      "sha256": "06f30b765e2248e00880b8cb8cc130bb5164df4e54adc71162143a19f995316c"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/tracking_records.csv",
+      "size_bytes": 34396,
+      "sha256": "8cf36c47772b28569a0564cadc8b4ce98c16d524d32ebea7f1eed1237e044a80"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/tracking_summary.csv",
+      "size_bytes": 1637,
+      "sha256": "5766fbb59c6fe9464bc46117c2330a353f30649b07dd463a14556c153b3b8d2a"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset/validation.txt",
+      "size_bytes": 1044,
+      "sha256": "cfa3cc09d569e3cced22d1a3c9f82c75bbb50cbde1aeb6aa73e6b200cefd0497"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/README.md",
+      "size_bytes": 3401,
+      "sha256": "e37a307f3a89166a1a0a89135d267280d5736674180f39e6ffe99b7ad16236cc"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/beam_codebook.csv",
+      "size_bytes": 128594,
+      "sha256": "bfaa4fd72c66cca9a5e88bcb4bdb456d572be6dfe95496bfa3c37d2c20727b18"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/beam_measurements.csv",
+      "size_bytes": 233726,
+      "sha256": "d3bb65f84d8c0568c6c6638a1882c648b054b9ede6be288c0bd4675a256c0f84"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/channel_data.npz",
+      "size_bytes": 45434,
+      "sha256": "05665b30a93b646e3490d64f0f65df248f4ed47a7148083235e51bca2734f0d7"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/data_dictionary.json",
+      "size_bytes": 3444,
+      "sha256": "4b9b53ef6021cd5bf8ed548f5da58332a7a57ca31f4883ca28d0d97957c5a089"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/interaction_records.csv",
+      "size_bytes": 222862,
+      "sha256": "b880d17ebff4b559eda0f29ec4e5b1af3285ff946e6c323e2c90e3b2c3105e6c"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/manifest.json",
+      "size_bytes": 12525,
+      "sha256": "388293dbf50e692f5a8cc5d8f55a0e0e2d830aacf6a9619a831953cb962a56a0"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/path_antenna_coefficients.csv",
+      "size_bytes": 3077291,
+      "sha256": "fae8a81250938cd52f89f83f4278e559f7d8782a980877bf48fac2f2b0ff0b1a"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/path_coefficients_antenna_resolved.npz",
+      "size_bytes": 337727,
+      "sha256": "b6c941c3a8ac8c33d5a70da290b66273b74f55d796babe7760d1eb0b2587123d"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/path_records.csv",
+      "size_bytes": 185935,
+      "sha256": "9f6817185b827ad71a3fe56b1249928320182a4c2d3ed30b07605d4ce465fae1"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/01_path_count_vs_position.pdf",
+      "size_bytes": 18891,
+      "sha256": "a6213d267ecd28592c23b86c31e83ffddb62805fccfaae260e549d45a224177b"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/01_path_count_vs_position.png",
+      "size_bytes": 125680,
+      "sha256": "fa7465270fe722588de1da979735c2d1b5763ee7b3098a4553a45ac5dc0c3955"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/02_los_visibility_vs_position.pdf",
+      "size_bytes": 17837,
+      "sha256": "3ac6841911a03251d290ce6af8e81f402681c75016feeaba9fe63aa30aab268e"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/02_los_visibility_vs_position.png",
+      "size_bytes": 67793,
+      "sha256": "88973ca1b12e126a6fb4d8caab0985d04c6eb0cc2885d102dd24f5b035821d77"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/03_best_beam_gain_vs_position.pdf",
+      "size_bytes": 18961,
+      "sha256": "1ed78ef81f30f213b9381d38b89db46bdbaed58ec7766e4bbc153f6de9a7cac2"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/03_best_beam_gain_vs_position.png",
+      "size_bytes": 114964,
+      "sha256": "bd0365fd21a5b4099713de0997ce5ea34dfe1dcf4f2ac8986f4a247aa6b4b9e7"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/04_beam_gain_heatmap.pdf",
+      "size_bytes": 27383,
+      "sha256": "7897a0e77411562bf756697ee0095810b0c7925a516cb00c89fa0a5a3c0476ca"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/04_beam_gain_heatmap.png",
+      "size_bytes": 116778,
+      "sha256": "a0235994145f8ca609b43be73ef662e37f796204f36b313a088daefe9f1c7bdb"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/05_path_power_delay_scatter.pdf",
+      "size_bytes": 21455,
+      "sha256": "d14fcc44957db4e0ddb3bcbc3c8b7910c522058f6392cc02e8eddec904b50fa7"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/05_path_power_delay_scatter.png",
+      "size_bytes": 146709,
+      "sha256": "826333be11e7078d5a2d304cebca963afd1c2a0be85b425a7a70e9fd87ae551a"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/06_interaction_type_counts.pdf",
+      "size_bytes": 15820,
+      "sha256": "4135c2395a838f2c02616c00be9469422087f273f40f807c68afdbe588967894"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/06_interaction_type_counts.png",
+      "size_bytes": 67695,
+      "sha256": "8015613a2156fe35efff8ea83c6d1dcd5f58a9de01bc6f011561f95bd50fc665"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/07_tracking_regret_vs_position.pdf",
+      "size_bytes": 20835,
+      "sha256": "dc8442ba944272c5fb8923685502c874f2f6e2aa0c6fdd32f64c680cc58fbba1"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/07_tracking_regret_vs_position.png",
+      "size_bytes": 146967,
+      "sha256": "ed6f97d3ca1166ef525b40ae55dacf89a290b47942d477b639880e8545ca2d1f"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/plots/s6_dataset_qa_report.pdf",
+      "size_bytes": 53314,
+      "sha256": "489ff84f63296d227563737b15d270cf1b3ce344f4a12453b8142e4a03647537"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/scene_objects.csv",
+      "size_bytes": 625,
+      "sha256": "d8719c78d2ea80f20a7a3525716104f6a3ba499b5de733ff2271f11a3898a74c"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/snapshot_metadata.csv",
+      "size_bytes": 11478,
+      "sha256": "06f30b765e2248e00880b8cb8cc130bb5164df4e54adc71162143a19f995316c"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/tracking_records.csv",
+      "size_bytes": 34396,
+      "sha256": "8cf36c47772b28569a0564cadc8b4ce98c16d524d32ebea7f1eed1237e044a80"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/tracking_summary.csv",
+      "size_bytes": 1637,
+      "sha256": "5766fbb59c6fe9464bc46117c2330a353f30649b07dd463a14556c153b3b8d2a"
+    },
+    {
+      "path": "results/S6/s6_physical_layer_dataset_extended/validation.txt",
+      "size_bytes": 1319,
+      "sha256": "8c42960bc68f8ce99db4b895a58592ca8863ce737e6a39b68d80c8dae04bc870"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/01_path_count_vs_position.pdf",
+      "size_bytes": 17375,
+      "sha256": "4e9a7f5b794d9153332950bf44300c300c621403e90a1c9b4f753df02440303f"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/01_path_count_vs_position.png",
+      "size_bytes": 103283,
+      "sha256": "fe26c0e3ee2987069756614567efe89ef2c64fe1310c13b9da1db333d178349d"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/02_channel_vector_norm.pdf",
+      "size_bytes": 19562,
+      "sha256": "2c6e85c3a571ba26f01259d3a5db52ff72a42174ca4dc5e2e823d78d767d3e8d"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/02_channel_vector_norm.png",
+      "size_bytes": 102461,
+      "sha256": "16259aaf8f55e0c5b591cc207b245d82260cccd1019544b99cb6bc7b6b0b1103"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/03_best_beam_gain_vs_position.pdf",
+      "size_bytes": 19508,
+      "sha256": "3cab4dfc89bfedeb84bcd09ea0354b6d82cf2c54261eb96d75bb3082491912b9"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/03_best_beam_gain_vs_position.png",
+      "size_bytes": 109499,
+      "sha256": "617d6e577d448947e9e1f11017946a3a458a0fbf87ccdfb33216ee1cc266b127"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/04_rms_delay_spread.pdf",
+      "size_bytes": 18504,
+      "sha256": "29ff61d1185219c0b6b25e4709bc67e0d08f87b3f18ada9fe2e12f29b4d0e96e"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/04_rms_delay_spread.png",
+      "size_bytes": 91308,
+      "sha256": "ceba27c10e09347e796621e94338f3d1c4be7b7746075493217a2e72470899b2"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/05_interaction_event_counts.pdf",
+      "size_bytes": 14135,
+      "sha256": "bfa208aa5989320a176b3c2d207b1331e79f31aec812c7d1693053064a7e5bc8"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/05_interaction_event_counts.png",
+      "size_bytes": 58748,
+      "sha256": "a877b247ec72ac8a8b2057f3ab8edf05b5aee6bcb39122fb530bbe00500658fa"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/06_beam_regret_vs_position.pdf",
+      "size_bytes": 20057,
+      "sha256": "8d3ae52942d248f56ab3953bf234cd8fcae296abe4e76b8fd5447a4614dbebdd"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/06_beam_regret_vs_position.png",
+      "size_bytes": 146883,
+      "sha256": "3803c927056481a36cdca3b650c917c4c42fab248036f45109d3fb5da5c70933"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/07_beam_probes_vs_position.pdf",
+      "size_bytes": 20762,
+      "sha256": "c633eb8c38a2582fbe6f651a535800f0849f28eabd0cde50daed042a5e33324d"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/07_beam_probes_vs_position.png",
+      "size_bytes": 217690,
+      "sha256": "0ae2c65f3b713f2d7affd0d50650a5d639d1e9d7cf67ac0ea376857beb58593b"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/08_overhead_vs_regret.pdf",
+      "size_bytes": 19093,
+      "sha256": "fb52eb2670449cff72b175bdca1f679fd58a6f0255302989e9f5e053405b0998"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/08_overhead_vs_regret.png",
+      "size_bytes": 93012,
+      "sha256": "df16111975f67fc6a77340a54d3a87c9f6b17347bf383a01e74ea8c33cc94a5f"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/09_paired_blockage_gain_delta.pdf",
+      "size_bytes": 16952,
+      "sha256": "5666bdc1590f09a2ac0430ad8233c5430d916e050fe376f1bb4b3a3ac746ad14"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/plots/09_paired_blockage_gain_delta.png",
+      "size_bytes": 61625,
+      "sha256": "8a0f7ddd5071f34a790aabf9f30164fdc5dc64f67c2a5d1a721cdb56af145642"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_1_channel_characteristics.csv",
+      "size_bytes": 6658,
+      "sha256": "d95aa9383686d92acc994196f304f5ab302733853617ec25103277e465ac4acb"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_2_blockage_paired_comparison.csv",
+      "size_bytes": 2534,
+      "sha256": "032b27c7ae8b0c4c656cabb35c38ce66f8320bd17d9596da98fa5e211aebeb01"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_3_interaction_depth_summary.csv",
+      "size_bytes": 59,
+      "sha256": "b478177f646af3c9c0d8c8e471c74bb59bf96adebb84cbeacbf9230f15759bc5"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_3_interaction_summary.csv",
+      "size_bytes": 350,
+      "sha256": "cfd1b697d268d5bfc193945639bea99c408ba6a0b5e901fd9fcab365fd26d3c5"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_3_path_delay_summary.csv",
+      "size_bytes": 815,
+      "sha256": "8a22ba2dd2f371705e261737539aa6965b7878881d03355a44f96049b2938f5a"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_4_beam_selection_per_snapshot.csv",
+      "size_bytes": 15671,
+      "sha256": "aaccb0903aac31d3a40523f5bf327ef8d560f56275ec77a0a0cb1e0a8da65bd1"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_4_beam_selection_summary.csv",
+      "size_bytes": 894,
+      "sha256": "696b60343d8964945c306cb262a54b693cb40abd97d2da66865ec4249fc1eb72"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_5_tracking_comparison.csv",
+      "size_bytes": 855,
+      "sha256": "c27b8013d22d6e531cab743736e6eefeb2e0366927aa057fea61208b5dacc4ff"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_5_tracking_per_snapshot.csv",
+      "size_bytes": 13419,
+      "sha256": "f124b817e2489b6504f39e494527a84737b4dc43fac9357a0ff59ce5281da15c"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_findings.md",
+      "size_bytes": 3477,
+      "sha256": "336555d5e28404e2e406c85be6535c9b3b979b05caffa8ebcfdb2156fab68402"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_manifest.json",
+      "size_bytes": 1139,
+      "sha256": "0110ef4ee9caa41b9ac8c6f7998ac1db006b51bb87c36cb47833dffe61102311"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_performance_report.pdf",
+      "size_bytes": 52427,
+      "sha256": "6765626acf1aa421f96397a2c8e2357afc3ab262e65c91dd87398867e3f5827e"
+    },
+    {
+      "path": "results/S7/s7_performance_evaluation/s7_validation.txt",
+      "size_bytes": 1010,
+      "sha256": "05e723e68c947c2c9387093b6202d2fb029d0bc1b94e2d1314b7310166eb934f"
+    },
+    {
+      "path": "source/S1/s1_ray_tracing_test.py",
+      "size_bytes": 6183,
+      "sha256": "792316ee7d08228f526c1fa33b29293bfaa62866d1e95ea54cf53274a8c33260"
+    },
+    {
+      "path": "source/S2/s2_vehicle_mobility.py",
+      "size_bytes": 10460,
+      "sha256": "d191e2a2aa0a86e7cff9521f1cd8e5f0aa6cd7982a3ed183de6f4dea667f0913"
+    },
+    {
+      "path": "source/S3/s3_beam_selection.py",
+      "size_bytes": 18309,
+      "sha256": "c47018038f588e76afa9110d306819b679ac3dbb650851aed75a3c2a528d4b0b"
+    },
+    {
+      "path": "source/S4/s4_1_path_geometry_export.py",
+      "size_bytes": 47830,
+      "sha256": "41f0f8ca27242d4c937a79adaa92aa434932ee8f8a44ff656eb3fd56baa2497b"
+    },
+    {
+      "path": "source/S4/s4_1_path_geometry_export_s6.py",
+      "size_bytes": 47830,
+      "sha256": "41f0f8ca27242d4c937a79adaa92aa434932ee8f8a44ff656eb3fd56baa2497b"
+    },
+    {
+      "path": "source/S4/s4_blockage.py",
+      "size_bytes": 35692,
+      "sha256": "fbba254f3769edcc1b3bce5fe1d75e1ddd4d5a6ab9687dd190e6cbe35198454f"
+    },
+    {
+      "path": "source/S5/s5_beam_tracking.py",
+      "size_bytes": 32798,
+      "sha256": "69336b7d118a6bc21912165b1cdbb4d33dc4b07350a43fead4e492ca5b4ee9a3"
+    },
+    {
+      "path": "source/S5_1/s5_1_adaptive_beam_tracking.py",
+      "size_bytes": 51710,
+      "sha256": "d7d99d886f12f18b53480e85962af2625aa20d90fb1e197a51b8d006bb414b35"
+    },
+    {
+      "path": "source/S6/s6_build_dataset.py",
+      "size_bytes": 39497,
+      "sha256": "7b4d1f1316967c161cbd26f1219a4c16548edb89ed71f2cdd6a61343474f1530"
+    },
+    {
+      "path": "source/S7/s7_extend_and_evaluate.py",
+      "size_bytes": 54045,
+      "sha256": "fa988a3a2eb36a72301f809fd388fbbfa7483316fd3527706012cca2ffd00243"
+    },
+    {
+      "path": "source/S8/s8_consolidate.py",
+      "size_bytes": 23787,
+      "sha256": "5808414d40425a3b1aa6455035bd6a8e537a2b1f61a0b04b7122888e06b4ab2e"
+    }
+  ],
+  "reproducibility_statement": "Hashes establish artifact identity. Bitwise regeneration across hardware/software stacks is not asserted."
+}

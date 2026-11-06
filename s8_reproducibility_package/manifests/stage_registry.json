@@ -1,0 +1,103 @@
+{
+  "project_dir": "/home/a2b/sionna_project",
+  "package_dir": "/home/a2b/sionna_project/s8_reproducibility_package",
+  "stages": {
+    "S1": {
+      "source_scripts_found": [
+        "s1_ray_tracing_test.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s1_ray_tracing_results.csv"
+      ]
+    },
+    "S2": {
+      "source_scripts_found": [
+        "s2_vehicle_mobility.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s2_mobility_paths.csv",
+        "s2_mobility_summary.csv"
+      ]
+    },
+    "S3": {
+      "source_scripts_found": [
+        "s3_beam_selection.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s3_beam_codebook.csv",
+        "s3_beam_selection_all_beams.csv",
+        "s3_beam_selection_summary.csv"
+      ]
+    },
+    "S4": {
+      "source_scripts_found": [
+        "s4_blockage.py",
+        "s4_1_path_geometry_export.py",
+        "s4_1_path_geometry_export_s6.py"
+      ],
+      "source_script_count": 3,
+      "result_artifacts_found": [
+        "s4_blockage_geometry"
+      ],
+      "validation_report": "s4_blockage_geometry/s4_validation.txt",
+      "validation_status": "PASS"
+    },
+    "S5": {
+      "source_scripts_found": [
+        "s5_beam_tracking.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s5_beam_tracking"
+      ],
+      "validation_report": "s5_beam_tracking/s5_validation.txt",
+      "validation_status": "PASS"
+    },
+    "S5_1": {
+      "source_scripts_found": [
+        "s5_1_adaptive_beam_tracking.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s5_1_adaptive_tracking"
+      ],
+      "validation_report": "s5_1_adaptive_tracking/s5_1_validation.txt",
+      "validation_status": "PASS"
+    },
+    "S6": {
+      "source_scripts_found": [
+        "s6_build_dataset.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s6_physical_layer_dataset",
+        "s6_physical_layer_dataset_extended"
+      ],
+      "validation_report": "s6_physical_layer_dataset_extended/validation.txt",
+      "validation_status": "PASS"
+    },
+    "S7": {
+      "source_scripts_found": [
+        "s7_extend_and_evaluate.py"
+      ],
+      "source_script_count": 1,
+      "result_artifacts_found": [
+        "s7_performance_evaluation"
+      ],
+      "validation_report": "s7_performance_evaluation/s7_validation.txt",
+      "validation_status": "PASS"
+    },
+    "S8": {
+      "source_scripts_found": [
+        "s8_consolidate.py"
+      ],
+      "source_script_count": 1
+    }
+  },
+  "notes": [],
+  "validation_failures": [],
+  "status": "PASS"
+}

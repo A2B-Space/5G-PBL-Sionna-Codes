@@ -1,0 +1,27 @@
+S8 CONSOLIDATION AUDIT
+============================================================================
+Project: /home/a2b/sionna_project
+Package: /home/a2b/sionna_project/s8_reproducibility_package
+Registry status: PASS
+
+Stage inventory:
+- S1: 1 source script(s); 1 result item(s); validation=N/A
+- S2: 1 source script(s); 2 result item(s); validation=N/A
+- S3: 1 source script(s); 3 result item(s); validation=N/A
+- S4: 3 source script(s); 1 result item(s); validation=PASS
+- S5: 1 source script(s); 1 result item(s); validation=PASS
+- S5_1: 1 source script(s); 1 result item(s); validation=PASS
+- S6: 1 source script(s); 2 result item(s); validation=PASS
+- S7: 1 source script(s); 1 result item(s); validation=PASS
+- S8: 1 source script(s); 0 result item(s); validation=N/A
+
+Notes:
+
+Validation failures:
+- None detected in reports found.
+
+Interpretation:
+- This audit checks artifact availability and parses existing validation summaries.
+- It does not rerun Sionna RT or independently reproduce the physical simulation.
+- A missing historical source script is a provenance gap, not a failed result-data check.
+- One scene/one trajectory does not support generalization claims.

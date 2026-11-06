@@ -1,0 +1,20 @@
+S4 VALIDATION REPORT
+========================================================================
+Snapshots: 11
+Geometrically obstructed snapshots: 8
+Geometrically unobstructed snapshots: 3
+
+Checks:
+[PASS] baseline_contains_both_los_and_nlos_snapshots
+[PASS] blocked_direct_los_absent_at_geometrically_intersected_snapshots
+[PASS] los_classification_unchanged_where_new_blocker_does_not_intersect
+[PASS] baseline_direct_los_delay_matches_geometric_delay_within_1ns
+
+OVERALL: PASS
+
+Interpretation:
+- LOS is identified from valid paths whose interaction sequence contains only NONE (zero); refracted paths are not LOS.
+- Geometric blockage is independently determined by segment-AABB intersection.
+- The channel-gain metric is dimensionless and is not dBm or watts.
+- The concrete obstruction is a simplified controlled geometry.
+- No Doppler/time evolution is simulated in this spatial snapshot experiment.
