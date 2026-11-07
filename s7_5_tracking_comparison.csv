@@ -1,0 +1,7 @@
+condition,comparison_baseline,baseline_total_probes,adaptive_total_probes,probes_saved,probe_reduction_pct,baseline_mean_regret_db,adaptive_mean_regret_db,baseline_p95_regret_db,adaptive_p95_regret_db,adaptive_maximum_regret_db,adaptive_beam_switches,adaptive_expanded_searches,adaptive_fallback_full_sweeps
+unblocked,exhaustive_oracle,572,142,430,75.17482517482517,0.0,0.0,0.0,0.0,0.0,0,0,0
+unblocked,hold_last_beam,52,142,-90,-173.07692307692307,0.0,0.0,0.0,0.0,0.0,0,0,0
+unblocked,local_tracking,228,142,86,37.719298245614034,0.0,0.0,0.0,0.0,0.0,0,0,0
+blocked,exhaustive_oracle,572,188,384,67.13286713286713,0.0,0.0,0.0,0.0,0.0,3,2,0
+blocked,hold_last_beam,52,188,-136,-261.53846153846155,11.805367203044176,0.0,18.607738903136806,0.0,0.0,3,2,0
+blocked,local_tracking,228,188,40,17.54385964912281,2.507461497386943,0.0,13.791038235628186,0.0,0.0,3,2,0

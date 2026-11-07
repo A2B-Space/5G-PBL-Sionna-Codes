@@ -1,0 +1,9 @@
+condition,method,snapshots,total_beam_probes,mean_beams_probed,mean_regret_db,median_regret_db,p95_regret_db,maximum_regret_db,oracle_beam_match_pct,beam_switches,full_sweeps
+blocked,adaptive_tracking,11,188,17.09090909090909,0.0,0.0,0.0,0.0,100.0,3,1
+blocked,exhaustive_oracle,11,572,52.0,0.0,0.0,0.0,0.0,100.0,3,11
+blocked,hold_last_beam,11,52,4.7272727272727275,11.805367203044176,15.459947546121768,18.607738903136806,20.023805623197546,27.27272727272727,0,1
+blocked,local_tracking,11,228,20.727272727272727,2.507461497386943,0.0,13.791038235628186,14.651985897624087,81.81818181818183,2,3
+unblocked,adaptive_tracking,11,142,12.909090909090908,0.0,0.0,0.0,0.0,100.0,0,1
+unblocked,exhaustive_oracle,11,572,52.0,0.0,0.0,0.0,0.0,100.0,0,11
+unblocked,hold_last_beam,11,52,4.7272727272727275,0.0,0.0,0.0,0.0,100.0,0,1
+unblocked,local_tracking,11,228,20.727272727272727,0.0,0.0,0.0,0.0,100.0,0,3

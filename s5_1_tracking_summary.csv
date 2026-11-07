@@ -1,0 +1,9 @@
+condition,method,num_snapshots,num_beams_in_codebook,total_beam_probes,mean_beams_probed_per_snapshot,mean_beam_training_overhead_pct,total_beam_switches,beam_switch_rate_per_transition_pct,mean_selected_gain_db,mean_oracle_regret_db,median_oracle_regret_db,p95_oracle_regret_db,maximum_oracle_regret_db,snapshots_within_1db_of_oracle_pct,snapshots_within_3db_of_oracle_pct,full_sweep_count,expanded_search_count,fallback_full_sweep_count,gain_drop_trigger_count
+blocked,exhaustive_oracle,11,52,572,52.0,100.0,3,30.0,-109.80477714022285,0.0,0.0,0.0,0.0,100.0,100.0,11,0,0,0
+blocked,hold_last_beam,11,52,52,4.7272727272727275,9.090909090909092,0,0.0,-121.61014434326702,11.805367203044176,15.459947546121768,18.607738903136806,20.023805623197546,27.27272727272727,27.27272727272727,1,0,0,0
+blocked,local_tracking,11,52,228,20.727272727272727,39.86013986013985,2,20.0,-112.3122386376098,2.507461497386943,0.0,13.791038235628186,14.651985897624087,81.81818181818183,81.81818181818183,3,0,0,0
+blocked,adaptive_tracking,11,52,188,17.09090909090909,32.86713286713287,3,30.0,-109.80477714022285,0.0,0.0,0.0,0.0,100.0,100.0,1,2,0,3
+unblocked,exhaustive_oracle,11,52,572,52.0,100.0,0,0.0,-91.59969526120898,0.0,0.0,0.0,0.0,100.0,100.0,11,0,0,0
+unblocked,hold_last_beam,11,52,52,4.7272727272727275,9.090909090909092,0,0.0,-91.59969526120898,0.0,0.0,0.0,0.0,100.0,100.0,1,0,0,0
+unblocked,local_tracking,11,52,228,20.727272727272727,39.86013986013985,0,0.0,-91.59969526120898,0.0,0.0,0.0,0.0,100.0,100.0,3,0,0,0
+unblocked,adaptive_tracking,11,52,142,12.909090909090908,24.825174825174823,0,0.0,-91.59969526120898,0.0,0.0,0.0,0.0,100.0,100.0,1,0,0,1

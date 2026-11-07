@@ -1,0 +1,6 @@
+condition,method,from_snapshot,to_snapshot,from_rx_x_m,to_rx_x_m,previous_beam_id,new_beam_id,previous_gain_db_at_new_snapshot,new_beam_gain_db,oracle_beam_id,oracle_gain_db,regret_after_switch_db,is_full_sweep
+blocked,exhaustive_oracle,2,3,21.0,23.0,12,11,-112.52521912694796,-99.38713344115749,11,-99.38713344115749,0.0,True
+blocked,exhaustive_oracle,5,6,27.0,29.0,11,23,-127.5250776745724,-112.87309177694831,23,-112.87309177694831,0.0,True
+blocked,exhaustive_oracle,7,8,31.0,33.0,23,20,-152.15689756358125,-129.02762214055605,20,-129.02762214055605,0.0,True
+blocked,local_tracking,2,3,21.0,23.0,12,11,-112.52521912694796,-99.38713344115749,11,-99.38713344115749,0.0,False
+blocked,local_tracking,7,8,31.0,33.0,11,20,-145.2039956166634,-129.02762214055605,20,-129.02762214055605,0.0,True

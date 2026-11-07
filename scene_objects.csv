@@ -1,0 +1,12 @@
+condition,object_id,object_name,scene_id,condition_id
+blocked,1,s4_concrete_obstruction,simple_street_canyon,blocked
+blocked,3,floor,simple_street_canyon,blocked
+blocked,5,building_6,simple_street_canyon,blocked
+blocked,6,building_2,simple_street_canyon,blocked
+blocked,9,no-name-2,simple_street_canyon,blocked
+blocked,10,no-name-1,simple_street_canyon,blocked
+unblocked,3,floor,simple_street_canyon,unblocked
+unblocked,5,building_6,simple_street_canyon,unblocked
+unblocked,6,building_2,simple_street_canyon,unblocked
+unblocked,9,no-name-2,simple_street_canyon,unblocked
+unblocked,10,no-name-1,simple_street_canyon,unblocked

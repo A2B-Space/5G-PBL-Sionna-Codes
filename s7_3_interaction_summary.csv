@@ -1,0 +1,5 @@
+condition,interaction_type,event_count,unique_interacting_paths,unique_snapshots,mean_interaction_order,unique_scene_objects
+blocked,refraction,219,106,11,1.3333333333333333,4
+blocked,specular_reflection,242,110,11,1.896694214876033,4
+unblocked,refraction,235,120,11,1.3361702127659574,3
+unblocked,specular_reflection,316,145,11,1.6740506329113924,4
