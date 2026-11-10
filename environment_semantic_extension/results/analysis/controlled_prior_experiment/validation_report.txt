@@ -1,0 +1,11 @@
+CONTROLLED PRIOR EXPERIMENT VALIDATION
+
+[PASS] expected_total_rows
+[PASS] no_missing_selected_beams
+[PASS] selected_beams_in_range
+[PASS] oracle_beams_in_range
+[PASS] nonnegative_regret
+[PASS] probe_counts_valid
+[PASS] all_prior_searches_have_nine_candidates
+
+OVERALL: PASS

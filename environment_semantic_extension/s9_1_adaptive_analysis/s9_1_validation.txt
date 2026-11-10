@@ -1,0 +1,31 @@
+S9.1 ADAPTIVE EXPANSION-BUDGET SENSITIVITY VALIDATION
+====================================================================
+Dataset: C:\Users\nanda\EnvironmentSemanticProject\reference\sionna-teammate\recovered_results\s6_physical_layer_dataset
+Conditions: blocked, unblocked
+Snapshots per condition: 11
+Expanded budgets: [16, 20, 24, 28, 32]
+Policy: S5.1 sequential logic; only expanded candidate count varies.
+
+[PASS] two_paired_conditions
+[PASS] 11_snapshots_per_condition
+[PASS] 52_codebook_directions
+[PASS] finite_complete_gain_tensor
+[PASS] one_initial_full_acquisition_per_condition_and_budget
+[PASS] selected_beam_in_probed_set
+[PASS] nonnegative_regret
+[PASS] expanded_search_requires_both_thresholds
+[PASS] fallback_only_after_expansion_trigger
+[PASS] candidate_count_matches_budget_or_full_sweep
+[PASS] budget_32_reproduces_s5_1_selected_beams
+[PASS] budget_32_reproduces_s5_1_probe_counts
+[PASS] budget_32_reproduces_s5_1_regret
+
+OVERALL: PASS
+
+Interpretation limits:
+- CPU-only replay of existing S6 Sionna beam-gain measurements.
+- One scene, one quasi-static trajectory, 11 positions, two conditions.
+- Candidate counts are not measured latency or energy.
+- Full-codebook gains are used for offline oracle scoring and S5.1's
+  specified full-sweep fallback, not ordinary candidate selection.
+- This sensitivity experiment does not establish generalization.

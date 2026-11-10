@@ -1,0 +1,15 @@
+{
+  "dataset": "S6 physical-layer dataset",
+  "scene": "simple_street_canyon",
+  "frequency_ghz": 28,
+  "codebook_beams": 52,
+  "transmit_antennas": 64,
+  "local_candidates": 9,
+  "expanded_candidates": 32,
+  "gain_drop_trigger_db": 8.0,
+  "residual_drop_trigger_db": 20.0,
+  "hysteresis_db": 3.0,
+  "prior_method": "Previous snapshot's selected beam; not a semantic prediction",
+  "current_snapshot_oracle_used_for_prior": false,
+  "scope": "One trajectory, 11 snapshots, two paired obstruction conditions. Descriptive simulation only."
+}

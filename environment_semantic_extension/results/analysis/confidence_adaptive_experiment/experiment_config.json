@@ -1,0 +1,36 @@
+{
+  "dataset": "S6 physical-layer dataset",
+  "scene": "simple_street_canyon",
+  "frequency_ghz": 28,
+  "codebook_beams": 52,
+  "transmit_antennas": 64,
+  "controlled_offsets_deg": [
+    0,
+    15,
+    30,
+    45
+  ],
+  "confidence_mapping": {
+    "0": {
+      "confidence": "high",
+      "candidate_count": 9
+    },
+    "15": {
+      "confidence": "high",
+      "candidate_count": 9
+    },
+    "30": {
+      "confidence": "medium",
+      "candidate_count": 32
+    },
+    "45": {
+      "confidence": "low",
+      "candidate_count": 52
+    }
+  },
+  "prior_source": "Previous selected beam of each policy",
+  "prior_construction": "Controlled azimuth perturbation, fixed elevation, nearest valid codebook direction",
+  "current_snapshot_oracle_used_for_prior": false,
+  "candidate_search": "Top N nearest codebook directions, including prior centre",
+  "scope": "One trajectory, 11 snapshots, two obstruction conditions. Controlled confidence experiment, not semantic model evaluation."
+}

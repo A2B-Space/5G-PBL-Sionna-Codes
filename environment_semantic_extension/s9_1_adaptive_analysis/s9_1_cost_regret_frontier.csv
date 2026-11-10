@@ -1,0 +1,13 @@
+condition,policy,expanded_budget,mean_beams_probed,mean_regret_db,is_pareto_efficient
+blocked,adaptive_expanded_16,16,17.454545454545453,3.429842457178495,False
+blocked,adaptive_expanded_20,20,17.818181818181817,3.429842457178495,False
+blocked,adaptive_expanded_24,24,15.636363636363637,1.0372165043036445,True
+blocked,adaptive_expanded_28,28,16.363636363636363,0.5956206171343813,True
+blocked,adaptive_expanded_32,32,17.09090909090909,0.0,True
+blocked,S5.1_original_adaptive_32,32,17.09090909090909,0.0,True
+unblocked,adaptive_expanded_16,16,12.909090909090908,0.0,True
+unblocked,adaptive_expanded_20,20,12.909090909090908,0.0,True
+unblocked,adaptive_expanded_24,24,12.909090909090908,0.0,True
+unblocked,adaptive_expanded_28,28,12.909090909090908,0.0,True
+unblocked,adaptive_expanded_32,32,12.909090909090908,0.0,True
+unblocked,S5.1_original_adaptive_32,32,12.909090909090908,0.0,True

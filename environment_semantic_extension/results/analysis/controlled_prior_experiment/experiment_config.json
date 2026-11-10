@@ -1,0 +1,24 @@
+{
+  "dataset": "S6 physical-layer dataset",
+  "scene": "simple_street_canyon",
+  "frequency_ghz": 28,
+  "codebook_beams": 52,
+  "transmit_antennas": 64,
+  "prior_source": "Previous snapshot's adaptive selected beam",
+  "azimuth_offsets_deg": [
+    0,
+    15,
+    30,
+    45
+  ],
+  "prior_candidate_count": 9,
+  "prior_mapping": "Shift previous beam azimuth, preserve elevation, map to nearest valid codebook direction",
+  "current_snapshot_oracle_used_to_construct_prior": false,
+  "initial_acquisition": "Exhaustive 52-beam scan",
+  "conditions": [
+    "unblocked",
+    "blocked"
+  ],
+  "snapshots_per_condition": 11,
+  "scope": "One trajectory, two paired obstruction conditions. Controlled prior perturbation experiment; not actual semantic prediction evaluation."
+}
