@@ -1,0 +1,30 @@
+S9.0 FIXED-BUDGET ANGULAR BEAM-TRACKING VALIDATION
+====================================================================
+Dataset: C:\Users\nanda\EnvironmentSemanticProject\reference\sionna-teammate\recovered_results\s6_physical_layer_dataset
+Samples: 22
+Conditions: blocked, unblocked
+Snapshots per condition: 11
+Codebook size: 52
+Candidate budgets: [1, 3, 5, 9, 16, 24, 32, 40, 52]
+Imported existing S5.1 methods from tracking_records.csv.
+
+[PASS] dataset_contains_two_conditions
+[PASS] dataset_contains_11_snapshots_per_condition
+[PASS] all_52_codebook_beams_present
+[PASS] gain_matrix_complete_and_finite
+[PASS] one_initial_full_acquisition_per_condition_and_policy
+[PASS] selected_beam_always_belongs_to_probed_set
+[PASS] regret_nonnegative
+[PASS] full_codebook_policy_has_zero_regret
+
+OVERALL: PASS
+
+Interpretation limits:
+- This is a CPU-only analysis of already generated Sionna outputs.
+- Current data cover one scene, one spatial quasi-static trajectory,
+  11 positions, and two paired obstruction conditions.
+- Probe counts are candidate-measurement counts, not measured latency or energy.
+- Regret uses the full codebook only as an offline evaluation oracle.
+- Fixed-budget results are a benchmark/sensitivity study, not evidence
+  of generalization to unseen scenes or trajectories.
+- No camera/semantic observations are consumed in this stage.

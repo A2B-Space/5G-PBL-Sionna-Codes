@@ -136,3 +136,18 @@ The intended direction is to expand the physical-layer dataset across multiple s
 This integration should be treated as a new experimental stage, with its own methodology, validation, and performance evaluation.
 
 **Current status:** S1–S8 have been implemented and evaluated for the documented single-scene, single-trajectory experiment. Multi-scene generalization and semantic-to-physical-layer integration remain future work.
+
+## Research Extension: Adaptive Semantic Beam Management
+
+An additional research extension investigates beam-utility-aware adaptive semantic communication for distributed sensing-aided mmWave beam management.
+
+It includes:
+- Scenario 41 data-validation and synchronization analysis tools.
+- DeepSense beam-codebook and Sionna beam-neighbour analysis.
+- Confidence-adaptive, prior-guided, and utility-aware beam-selection experiments.
+- Communication-cost, beam-reliability, and post-acquisition analysis.
+
+**Implementation and experimental results:** [`environment_semantic_extension/`](./environment_semantic_extension/)
+
+See the extension's [README](./environment_semantic_extension/README.md) for its structure, current scope, and usage notes.
+

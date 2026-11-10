@@ -1,0 +1,14 @@
+CONFIDENCE-ADAPTIVE EXPERIMENT VALIDATION
+
+[PASS] expected_total_rows
+[PASS] selected_beams_valid
+[PASS] oracle_beams_valid
+[PASS] nonnegative_regret
+[PASS] valid_probe_counts
+[PASS] confidence_high_uses_9
+[PASS] confidence_medium_uses_32
+[PASS] confidence_low_uses_52
+[PASS] confidence_prior_not_from_current_oracle
+[PASS] all_tracking_methods_have_10_post_acquisition_samples
+
+OVERALL: PASS

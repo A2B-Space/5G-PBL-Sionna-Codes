@@ -1,0 +1,45 @@
+UTILITY-AWARE ADAPTIVE SEMANTIC BEAM SELECTION
+==============================================
+Matched prediction/utility samples: 449
+Join keys: test_row + original_sample_id
+Utility source: existing adaptive_beam_sample_results.csv
+Cross-validation: deterministic shuffled 5-fold OOF
+Model: standardized ridge regression
+Ridge alpha: 3.0
+Cost penalties: (0.0, 0.25, 0.5, 1.0, 2.0, 4.0, 8.0)
+
+The previous attempt incorrectly treated original_sample_id as a row
+index into the 22,500-row Unit 1 power matrix. This version does not.
+The existing per-sample utility table is joined using the two identifiers
+shared with the semantic prediction export.
+
+Caveats:
+- CV is for development on the existing 449-sample evaluation set.
+- It is not a final independent generalization estimate.
+- Candidate count is a proxy, not measured latency or energy.
+- Candidate-set regret assumes the strongest measured candidate can be
+  selected; this is not a free receiver-side operation.
+
+METHOD COMPARISON
+                    method  mean_regret_db  median_regret_db  p95_regret_db  within_1db_pct  within_3db_pct  oracle_in_candidate_set_pct  mean_candidates  candidate_reduction_pct
+                Fixed_Top1        1.329538               0.0      13.021741       84.855234       91.536748                    52.561247         1.000000                98.437500
+                Fixed_Top3        0.616976               0.0       4.516204       94.654788       94.654788                    87.305122         3.000000                95.312500
+                Fixed_Top5        0.421576               0.0       0.605243       95.322940       96.659243                    91.314031         5.000000                92.187500
+             Exhaustive_64        0.000000               0.0       0.000000      100.000000      100.000000                   100.000000        64.000000                 0.000000
+   UtilityAware_lambda_0dB        0.464739               0.0       0.966294       95.100223       96.436526                    79.732739         3.463252                94.588669
+UtilityAware_lambda_0.25dB        0.464739               0.0       0.966294       95.100223       96.436526                    79.732739         3.432071                94.637389
+ UtilityAware_lambda_0.5dB        0.464739               0.0       0.966294       95.100223       96.436526                    79.732739         3.423163                94.651308
+   UtilityAware_lambda_1dB        0.464739               0.0       0.966294       95.100223       96.436526                    79.732739         3.383073                94.713948
+   UtilityAware_lambda_2dB        0.466110               0.0       0.966294       95.100223       96.436526                    79.064588         3.320713                94.811386
+   UtilityAware_lambda_4dB        0.482969               0.0       1.081356       94.877506       96.213808                    78.173719         3.169265                95.048023
+   UtilityAware_lambda_8dB        0.491119               0.0       1.081356       94.877506       96.213808                    76.169265         2.835189                95.570017
+
+UTILITY-COST TRADEOFF
+ lambda_db_per_full_64_beam_search  mean_regret_db  median_regret_db  mean_candidates  candidate_reduction_pct  oracle_in_candidate_set_pct  within_1db_pct  within_3db_pct  selected_top1_pct  selected_top3_pct  selected_top5_pct
+                              0.00        0.464739               0.0         3.463252                94.588669                    79.732739       95.100223       96.436526          33.853007           9.131403          57.015590
+                              0.25        0.464739               0.0         3.432071                94.637389                    79.732739       95.100223       96.436526          34.521158           9.354120          56.124722
+                              0.50        0.464739               0.0         3.423163                94.651308                    79.732739       95.100223       96.436526          34.966592           8.908686          56.124722
+                              1.00        0.464739               0.0         3.383073                94.713948                    79.732739       95.100223       96.436526          35.634744           9.576837          54.788419
+                              2.00        0.466110               0.0         3.320713                94.811386                    79.064588       95.100223       96.436526          36.971047          10.022272          53.006682
+                              4.00        0.482969               0.0         3.169265                95.048023                    78.173719       94.877506       96.213808          38.975501          13.585746          47.438753
+                              8.00        0.491119               0.0         2.835189                95.570017                    76.169265       94.877506       96.213808          43.207127          21.826281          34.966592

@@ -1,0 +1,3 @@
+condition,requested_offsets,actual_mean_errors_deg,offset_error_correlation,strictly_nondecreasing_error
+blocked,"0,15,30,45","23.667, 39.917, 50.393, 47.257",0.8790997763499956,False
+unblocked,"0,15,30,45","0.000, 14.929, 29.250, 44.049",0.9999705584613391,True

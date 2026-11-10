@@ -1,0 +1,30 @@
+CONFIDENCE CALIBRATION AND COST-UTILITY AUDIT
+
+CONFIDENCE ORDER AUDIT
+condition requested_offsets         actual_mean_errors_deg  offset_error_correlation  strictly_nondecreasing_error
+  blocked        0,15,30,45 23.667, 39.917, 50.393, 47.257                  0.879100                         False
+unblocked        0,15,30,45  0.000, 14.929, 29.250, 44.049                  0.999971                          True
+
+PARETO FRONTIER
+condition                    method  mean_probes  mean_regret_db
+  blocked  confidence_adaptive_0deg          9.0        2.885468
+  blocked         fixed_prior9_0deg          9.0        2.885468
+  blocked         existing_adaptive         13.6        0.000000
+unblocked  confidence_adaptive_0deg          9.0        0.000000
+unblocked confidence_adaptive_15deg          9.0        0.000000
+unblocked         existing_adaptive          9.0        0.000000
+unblocked         fixed_prior9_0deg          9.0        0.000000
+unblocked        fixed_prior9_15deg          9.0        0.000000
+
+IMPORTANT LIMITATIONS
+- Actual prior-to-oracle error is retrospective.
+- Oracle information is used for evaluation only.
+- Injected offsets are not learned prediction uncertainty.
+- No semantic probability outputs are available.
+- Results cover one trajectory and 10 tracking snapshots
+  per obstruction condition.
+- Pareto dominance applies only to the methods tested.
+
+This analysis does not establish probabilistic calibration.
+A real calibration study requires held-out predictions
+with confidence scores and corresponding ground-truth outcomes.

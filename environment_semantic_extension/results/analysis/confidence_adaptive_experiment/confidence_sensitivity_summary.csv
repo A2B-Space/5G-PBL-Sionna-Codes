@@ -1,0 +1,9 @@
+condition,method,confidence,snapshots,mean_regret_db,max_regret_db,mean_probes,total_probes,oracle_inclusion_rate,mean_prior_error_deg
+blocked,confidence_adaptive_0deg,high,10,2.8854679116913244,11.8456920680606,9.0,90,0.7,23.66657956274563
+blocked,confidence_adaptive_15deg,high,10,9.351156430257609,15.775882494360317,9.0,90,0.3,39.917266063827796
+blocked,confidence_adaptive_30deg,medium,10,3.7728267028963445,12.841184493095113,32.0,320,0.7,50.392560683366995
+blocked,confidence_adaptive_45deg,low,10,0.0,0.0,52.0,520,1.0,47.257117138328574
+unblocked,confidence_adaptive_0deg,high,10,0.0,0.0,9.0,90,1.0,0.0
+unblocked,confidence_adaptive_15deg,high,10,0.0,0.0,9.0,90,1.0,14.928960365986928
+unblocked,confidence_adaptive_30deg,medium,10,0.0,0.0,32.0,320,1.0,29.25000233631699
+unblocked,confidence_adaptive_45deg,low,10,0.0,0.0,52.0,520,1.0,44.04862567408433
